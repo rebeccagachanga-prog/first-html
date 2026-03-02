@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- 
+DOCTYPE tells the browser this is HTML5.
+ALWAYS the first line in an HTML document.
+-->
+
+<html lang="en">
+<!-- 
+The <html> tag wraps the entire webpage.
+lang="en" helps browsers and screen readers.
+-->
+
+<head>
+    <!-- 
+    The <head> contains information ABOUT the page,
+    not content shown directly to users.
+    -->
+
+    <meta charset="UTF-8">
+    <!-- 
+    Ensures proper text encoding.
+    Prevents weird symbols.
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    Makes the page responsive on mobile devices.
+    -->
+
+    <title>HTML Web Creation Reference</title>
+    <!-- 
+    The text shown on the browser tab.
+    -->
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="css-reference.css">
+
+</head>
+
+<body>
+<!-- 
+The <body> contains EVERYTHING visible on the webpage.
+-->
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <!-- 
+        Header usually contains logo, title, or navigation.
+        -->
+
+        <h1>HTML Web Creation Reference</h1>
+        <!-- Main heading of the page -->
+
+        <p>This page shows everything learned in HTML.</p>
+        <!-- Paragraph text -->
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav>
+        <!-- 
+        Navigation section for links.
+        -->
+
+        <ul>
+            <!-- Unordered list -->
+            <li><a href="#text">Text</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#tables">Tables</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+        <!-- 
+        Main content of the page.
+        Only ONE <main> per page.
+        -->
+
+        <!-- ===== TEXT ELEMENTS ===== -->
+        <section id="text">
+            <!-- Section groups related content -->
+
+            <h2>Text Elements</h2>
+
+            <p>This is a paragraph.</p>
+
+            <strong>Bold text using strong</strong><br>
+            <em>Italic text using em</em><br>
+            <u>Underlined text</u><br>
+            <mark>Highlighted text</mark>
+
+            <!-- Line break -->
+            <br><br>
+
+            <!-- Horizontal line -->
+            <hr>
+        </section>
+
+        <!-- ===== LINKS ===== -->
+        <section>
+            <h2>Links</h2>
+
+            <!-- External link -->
+            <a href="https://www.google.com" target="_blank">
+                Visit Google
+            </a>
+
+            <!-- Internal link -->
+            <a href="about.html">About Page</a>
+        </section>
+
+        <!-- ===== IMAGES ===== -->
+        <section id="media">
+            <h2>Images</h2>
+
+            <!-- Image element -->
+            <img src="images/sample.jpg" alt="Sample image" width="200">
+
+            <!-- 
+            src = image path
+            alt = description for accessibility
+            -->
+        </section>
+
+        <!-- ===== AUDIO ===== -->
+        <section>
+            <h2>Audio</h2>
+
+            <audio controls>
+                <source src="audio/sample.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <!-- ===== VIDEO ===== -->
+        <section>
+            <h2>Video</h2>
+
+            <video width="300" controls>
+                <source src="videos/sample.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- ===== DIV & SPAN ===== -->
+        <section>
+            <h2>Div & Span</h2>
+
+            <div class="box">
+                <!-- div is a block-level container -->
+                This is a div
+            </div>
+
+            <p>
+                This is <span style="color:red;">span text</span> inside a paragraph.
+                <!-- span is inline -->
+            </p>
+        </section>
+
+        <!-- ===== LISTS ===== -->
+        <section>
+            <h2>Lists</h2>
+
+            <!-- Ordered list -->
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+            <!-- Unordered list -->
+            <ul>
+                <li>Chrome</li>
+                <li>Firefox</li>
+                <li>Edge</li>
+            </ul>
+        </section>
+
+        <!-- ===== TABLES ===== -->
+        <section id="tables">
+            <h2>Tables</h2>
+
+            <table border="1">
+                <!-- Table row -->
+                <tr>
+                    <!-- Table headers -->
+                    <th>Name</th>
+                    <th>Role</th>
+                </tr>
+
+                <tr>
+                    <!-- Table data -->
+                    <td>Alex</td>
+                    <td>Developer</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- ===== FORMS ===== -->
+        <section id="forms">
+            <h2>Forms</h2>
+
+            <form>
+
+                <!-- Label + Input -->
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name"><br><br>
+
+                <!-- Email -->
+                <label>Email:</label>
+                <input type="email"><br><br>
+
+                <!-- Password -->
+                <label>Password:</label>
+                <input type="password"><br><br>
+
+                <!-- Radio buttons -->
+                <label>Gender:</label>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <br><br>
+
+                <!-- Checkbox -->
+                <input type="checkbox"> I agree to terms
+                <br><br>
+
+                <!-- Dropdown -->
+                <select>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                </select>
+                <br><br>
+
+                <!-- Textarea -->
+                <textarea rows="4" cols="30"></textarea>
+                <br><br>
+
+                <!-- Button -->
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <!-- Footer content -->
+
+        <p>&copy; 2026 HTML Learning Reference</p>
+    </footer>
+
+</body>
+</html>

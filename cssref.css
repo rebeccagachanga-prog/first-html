@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*
+2. BODY STYLING
+                    */
+/*
+Styles entire webpage
+*/
+body {
+    background-color: rgb(219, 204, 198);
+    color: rgb(3, 45, 83);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/*
+3.TEXT STYLING
+*/
+h1 {
+    font-size: 24px;
+    color: #180101;
+    margin-bottom: 10px;
+}
+h2 {
+     font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+
+

@@ -1,0 +1,345 @@
+/* =====================================================
+   CSS WEB CREATION REFERENCE FILE
+   Everything here is beginner → intermediate level
+   ===================================================== */
+
+
+/* ===============================
+   1. CSS RESET / NORMALIZATION
+   =============================== */
+
+/* 
+Removes default browser spacing 
+and makes layout sizing predictable
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ===============================
+   2. BODY STYLING
+   =============================== */
+
+/*
+Styles the entire webpage
+*/
+body {
+    background-color: #f2f2f2;   /* Page background */
+    color: #333;                 /* Default text color */
+    font-family: Arial, sans-serif; /* Font style */
+    font-size: 16px;             /* Base font size */
+    line-height: 1.6;            /* Space between lines */
+}
+
+
+/* ===============================
+   3. TEXT STYLING
+   =============================== */
+
+h1 {
+    font-size: 32px;             /* Big heading */
+    color: #222;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.text-center {
+    text-align: center;          /* Utility class */
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+/* ===============================
+   4. COLORS & BACKGROUNDS
+   =============================== */
+
+.bg-primary {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.bg-dark {
+    background-color: #333;
+    color: white;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+
+/* ===============================
+   5. BOX MODEL (VERY IMPORTANT)
+   =============================== */
+
+.box {
+    width: 300px;                /* Content width */
+    height: auto;                /* Auto height */
+    padding: 20px;               /* Space inside */
+    margin: 20px auto;           /* Space outside + center */
+    border: 2px solid black;     /* Border */
+    border-radius: 5px;          /* Rounded corners */
+}
+
+
+/* ===============================
+   6. DISPLAY TYPES
+   =============================== */
+
+.block {
+    display: block;              /* Takes full width */
+}
+
+.inline {
+    display: inline;             /* No new line */
+}
+
+.inline-block {
+    display: inline-block;       /* Width + height allowed */
+}
+
+.none {
+    display: none;               /* Completely hidden */
+}
+
+
+/* ===============================
+   7. WIDTH & HEIGHT
+   =============================== */
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.max-width {
+    max-width: 800px;            /* Stops stretching */
+}
+
+
+/* ===============================
+   8. LINKS & STATES
+   =============================== */
+
+a {
+    color: blue;
+    text-decoration: none;       /* Remove underline */
+}
+
+a:hover {
+    color: red;                  /* On mouse hover */
+}
+
+a:active {
+    color: green;                /* When clicked */
+}
+
+a:visited {
+    color: purple;               /* Visited link */
+}
+
+
+/* ===============================
+   9. IMAGES
+   =============================== */
+
+img {
+    max-width: 100%;             /* Responsive images */
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+
+/* ===============================
+   10. LISTS
+   =============================== */
+
+ul {
+    list-style-type: square;     /* Bullet style */
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+
+/* ===============================
+   11. TABLES
+   =============================== */
+
+table {
+    border-collapse: collapse;   /* Merge borders */
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ddd;
+}
+
+
+/* ===============================
+   12. FORMS
+   =============================== */
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #4a90e2;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+
+/* ===============================
+   13. POSITIONING
+   =============================== */
+
+.relative {
+    position: relative;          /* Relative to itself */
+}
+
+.absolute {
+    position: absolute;          /* Relative to parent */
+    top: 10px;
+    right: 10px;
+}
+
+.fixed {
+    position: fixed;             /* Fixed on screen */
+    bottom: 0;
+}
+
+.sticky {
+    position: sticky;            /* Sticks on scroll */
+    top: 0;
+}
+
+
+/* ===============================
+   14. FLEXBOX (CORE WEB SKILL)
+   =============================== */
+
+.flex-container {
+    display: flex;
+    justify-content: center;     /* Horizontal alignment */
+    align-items: center;         /* Vertical alignment */
+    gap: 15px;                   /* Space between items */
+}
+
+.flex-item {
+    padding: 20px;
+    background-color: lightgray;
+}
+
+
+/* ===============================
+   15. GRID (MODERN LAYOUT)
+   =============================== */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #ccc;
+    padding: 20px;
+}
+
+
+/* ===============================
+   16. SHADOWS & EFFECTS
+   =============================== */
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px gray;
+}
+
+
+/* ===============================
+   17. TRANSITIONS & ANIMATIONS
+   =============================== */
+
+.transition-box {
+    transition: background-color 0.3s ease;
+}
+
+.transition-box:hover {
+    background-color: orange;
+}
+
+
+/* ===============================
+   18. RESPONSIVE DESIGN
+   =============================== */
+
+/* Applies when screen is 768px or smaller */
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+}
