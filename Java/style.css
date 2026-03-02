@@ -1,0 +1,101 @@
+* {
+    margin: 3;
+    padding: 2;
+    box-sizing: border-box;
+}
+
+/*=====BODY STYLING=====*/
+body {
+    background-color: rgb(160, 207, 248);
+    /*Background color*/
+    color: rgb(54, 26, 26);
+    /*Default text color*/
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    /*font style*/
+    font-size: 16px;
+    /* Base font size */
+    line-height: 1.6;
+    /* Space between lines */
+}
+
+h1 {
+    font-size: 32px;
+    /* Big heading */
+    color: #000000;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    /*Minor headings*/
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 15px;
+}
+.profile-pic {
+      width: 150px;            /*pprofile edit*/
+      height: 150px;
+      border-radius: 50%;      /* Makes it circular */
+      object-fit: cover;       /* Prevents stretching */
+      border: 3px solid #012b03;
+    }
+/* ===== Project Container ===== */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ===== Card Styling ===== */
+.project.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.project.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Image Placeholder ===== */
+.project-img-placeholder {
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: white;
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* ===== Text Styling ===== */
+.project h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.project p {
+  font-size: 0.95rem;
+    color: #666;
+}
+@media (max-width: 768px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+}
